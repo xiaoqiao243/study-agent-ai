@@ -23,7 +23,7 @@ app.add_middleware(
 
 # 大模型配置
 API_URL = "https://api.siliconflow.cn/v1/chat/completions"
-API_KEY = "sk-wbfiinjadqaudphtlcqnarhrqxopzongpdanocoqitoyftra"
+API_KEY = "你的API_KEY"
 MODEL_NAME = "deepseek-ai/DeepSeek-V4-Flash"
 # Chroma向量数据库
 CHROMA_DIR = "./chroma_db"
@@ -35,7 +35,7 @@ EMBEDDING_URL = "https://api.siliconflow.cn/v1/embeddings"
 EMBEDDING_MODEL = "BAAI/bge-large-zh-v1.5"
 
 # 数据库配置
-DB_URL = "mysql+pymysql://root:123456@127.0.0.1:3306/study_agent"
+DB_URL = "mysql+pymysql://root:你的密码@127.0.0.1:3306/study_agent"
 engine = create_engine(DB_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
